@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background-image: url('order-summary-component-images/pattern-background-desktop.svg');
+  background-repeat: no-repeat;
+  background-color: hsl(225, 100%, 94%); /*pale blue*/
+  line-height: 1.5em;
+  font-family: Red Hat Display, Avenir, sans-serif;
+  color: hsl(224, 23%, 55%); /*desaturated blue*/
+}
+
+h1 {
+  color: hsl(223, 47%, 23%); /*dark blue*/
+  font-weight: 900;
+  margin: 20px;
+}
+
+p {
+  font-size: 16px;
+  margin: 20px;
+}
+
+strong, .cancel-button {
+  font-weight: 700;
+}
+
+.order-box {
+  width: 30%;
+  height: auto;
+  padding: 250px 50px 30px 50px;
+  background-color: #fff;
+  text-align: center;
+  background-image: url('order-summary-component-images/illustration-hero.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 20px;
+}
+
+.annual-plan-box, .payment-button {
+  border-radius: 10px;
+}
+
+.annual-plan-box {
+  display: flex;
+  line-height: 1em;
+  padding: 10px;
+  background-color: hsl(225, 100%, 98%);
+  background-image: url('order-summary-component-images/icon-music.svg');
+  background-repeat: no-repeat;
+  background-position: 10% 50%;
+}
+
+.empty {
+  margin-bottom: 40px;
+}
+
+/* ---------------------------- BUTTONS --------------------------- */
+
+.change-button p {
+  height: auto;
+}
+
+.payment-button, .cancel-button {
+  font-weight: 700;
+}
+
+.payment-button {
+  color: #fff;
+  padding: 15px;
+  background-color: hsl(245, 75%, 52%); /*bright blue*/
+  filter: drop-shadow(0 20px 1em #e0e8ff);
+  box-sizing: border-box;
+}
+
+.cancel-button {
+  color: hsl(224, 23%, 55%); /*desat blue*/
+}
+
+.cancel-button a {
+  text-decoration: none;
+}
+
+.cancel-button a {
+  color: hsl(224, 23%, 55%);
+}
+
+@media (hover: hover) { /* dont really get why this is written like this */
+  .payment-button a:hover {
+    opacity: 50%;
+  }
+
+  .cancel-button a:hover {
+    color: hsl(223, 47%, 23%); /*dark blue*/
+    font-weight: 900;
+  }
+
+  .change-button a:hover{
+    opacity: 50%;
+    text-decoration: none;
+  }
+
+}
+
+/* ------------------------------------------------------------------------
+
+NOTES
+
+how to draw font not on system from given URL
+
+How to position elements in annual plan box - does it make sense to have multiple divs?? isn't that overkill?
+How to maky "Proceed to Payment" clickable as an entire button but still flow with the div specs of order box
+How to position the box in the middle of the screen relative to the user browser
+Annual plan is dark - but not sure how to show this - do I have to yet create another class???
+Too much spacing at the bottom of cancel order - DONE
+
+Change & proceed to payment can be set at opacity 50%
+cancel order has a different active state - dark blue
+
+To test in different browsers
+
+When would I group element selectors with similar properties
+e.g. buttons with divs
+
+optomising code
+
+
+
+--------------------------- FROM STYLE GUIDE ------------------------------
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Pale blue: hsl(225, 100%, 94%)
+- Bright blue: hsl(245, 75%, 52%)
+
+### Neutral
+
+- Very pale blue: hsl(225, 100%, 98%)
+- Desaturated blue: hsl(224, 23%, 55%)
+- Dark blue: hsl(223, 47%, 23%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 16px
+
+### Font
+
+- Family: [Red Hat Display](https://fonts.google.com/specimen/Red+Hat+Display)
+- Weights: 500, 700, 900
+
+
+------------------------------------------------------------------------*/
