@@ -1,3 +1,23 @@
+/* ---------------------------------------------------------------------------------
+
+>>>> TO RESOLVE
+
+❍ how to use font sourced from a given URL as specified in style guide
+
+❍ How to make "Annual Plan" dark without using inline style on HTML doc
+❍ Can I avoid using empty divs in html to force empty spaces between elements?
+❍ Drop shadow on .payment-button colour doesn't seem to match any of the style guide colours
+
+❍ To test in different browsers
+❍ To test in different screen sizes
+
+❍ When would I group element selectors with similar properties
+e.g. buttons with divs
+
+❍ Optomise & organise code better
+
+--------------------------------------------------------------------------------- */
+
 * {
   margin: 0;
   padding: 0;
@@ -5,14 +25,23 @@
 }
 
 body {
-  display: flex;
-  justify-content: center;
   background-image: url('order-summary-component-images/pattern-background-desktop.svg');
   background-repeat: no-repeat;
   background-color: hsl(225, 100%, 94%); /*pale blue*/
   line-height: 1.5em;
   font-family: Red Hat Display, Avenir, sans-serif;
   color: hsl(224, 23%, 55%); /*desaturated blue*/
+}
+
+.container {
+  height: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.empty {
+  margin: 40px;
 }
 
 h1 {
@@ -26,12 +55,12 @@ p {
   margin: 20px;
 }
 
-strong, .cancel-button {
-  font-weight: 700;
+strong {
+  font-weight: 900;
 }
 
 .order-box {
-  width: 30%;
+  width: 450px;
   height: auto;
   padding: 250px 50px 30px 50px;
   background-color: #fff;
@@ -42,47 +71,54 @@ strong, .cancel-button {
   border-radius: 20px;
 }
 
-.annual-plan-box, .payment-button {
-  border-radius: 10px;
-}
-
 .annual-plan-box {
   display: flex;
-  line-height: 1em;
+  align-items: center;
+  justify-content: flex-end;
   padding: 10px;
   background-color: hsl(225, 100%, 98%);
   background-image: url('order-summary-component-images/icon-music.svg');
   background-repeat: no-repeat;
-  background-position: 10% 50%;
+  background-position: 8% 50%;
 }
 
-.empty {
-  margin-bottom: 40px;
+.annual-plan-text {
+  padding-right: 50px;
+  line-height: 0.4em;
+}
+
+.annual-plan-box, .payment-button {
+  border-radius: 10px;
 }
 
 /* ---------------------------- BUTTONS --------------------------- */
 
-.change-button p {
-  height: auto;
+.payment-button, .cancel-button, .change-button p {
+  font-size: 0.9em;
 }
 
 .payment-button, .cancel-button {
   font-weight: 700;
 }
 
+.change-button a {
+  font-weight: 700;
+  color: hsl(245, 75%, 52%); /*bright blue*/
+}
+
 .payment-button {
+  text-decoration: none;
   color: #fff;
-  padding: 15px;
+  padding: 15px 106px 15px 106px;
   background-color: hsl(245, 75%, 52%); /*bright blue*/
-  filter: drop-shadow(0 20px 1em #e0e8ff);
-  box-sizing: border-box;
+  filter: drop-shadow(0 20px 1em #e0e8ff); /* replace with e0e8ff */
 }
 
 .cancel-button {
   color: hsl(224, 23%, 55%); /*desat blue*/
 }
 
-.cancel-button a {
+.payment-button a, .cancel-button a {
   text-decoration: none;
 }
 
@@ -91,17 +127,17 @@ strong, .cancel-button {
 }
 
 @media (hover: hover) { /* dont really get why this is written like this */
-  .payment-button a:hover {
+  a:hover {
     opacity: 50%;
   }
 
   .cancel-button a:hover {
+    opacity: 100%;
     color: hsl(223, 47%, 23%); /*dark blue*/
     font-weight: 900;
   }
 
   .change-button a:hover{
-    opacity: 50%;
     text-decoration: none;
   }
 
@@ -109,29 +145,34 @@ strong, .cancel-button {
 
 /* ------------------------------------------------------------------------
 
-NOTES
+RESOLVED
 
-how to draw font not on system from given URL
+✔️ Too much spacing at the bottom of order-box container
+Adjusted padding-bottom value
 
-How to position elements in annual plan box - does it make sense to have multiple divs?? isn't that overkill?
-How to maky "Proceed to Payment" clickable as an entire button but still flow with the div specs of order box
-How to position the box in the middle of the screen relative to the user browser
-Annual plan is dark - but not sure how to show this - do I have to yet create another class???
-Too much spacing at the bottom of cancel order - DONE
+✔️ How to position elements in annual plan box - does it make sense to have multiple divs?? isn't that overkill?
+I don't think there's a way around divs
+Ended up using two divs (1) for annual text (2) "change" link
+Then pushed them all alongside each other within containing div using display text
 
-Change & proceed to payment can be set at opacity 50%
-cancel order has a different active state - dark blue
+✔️ Annual plan is dark - but not sure how to show this - do I have to yet create another class???
+... used inline style in HTML doc as a just-for-now workaround to achieve the result
 
-To test in different browsers
+✔️ How to make "Proceed to Payment" clickable as an entire button but still flow with the div specs of order
+For a long time I was struggling with the Payment button only being as wide as the content as a clickable button
+Tried setting "width property but the browser would ignore the rule.
+Found out I just needed to adjust the padding size lol
+I think I wanted to find a way to get the payment button to inherit the width of the order-box container div so I didn't have to manually set the values
+I learnt today that some properties are not inheritable, width being one of them (15/10)
+So I just adjusted the padding pixel by pixel until it broke out of the containing div width
 
-When would I group element selectors with similar properties
-e.g. buttons with divs
+✔️ Position the order box in the middle of the screen relative to the user browser
+I couldn't place it relative to user browser, I could set a value for padding-top but it wouldn't be exactly center to however you size the screen
+For the display flex to work properly it seems you need to set a height so it knows where to center - but I don't know how this will translate to bigger screens
 
-optomising code
+--------------------------- FROM STYLE GUIDE COPY ------------------------------
 
-
-
---------------------------- FROM STYLE GUIDE ------------------------------
+# Front-end Style Guide
 
 ## Layout
 
