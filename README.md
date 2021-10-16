@@ -1,5 +1,5 @@
-# order-summary-component Challenge
+# Front End Mentor Challenge #1
 
-First FrontEnd Mentor newbie challenge
+~ In progress
 
 See the design we were supposed to match here: https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj
