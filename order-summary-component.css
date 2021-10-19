@@ -2,15 +2,14 @@
 
 >>>> TO RESOLVE
 
-❍ how to use font sourced from a given URL as specified in style guide
+❍ code responsive, mobile first css
+common screen size is 360×640 – 12.98%__ — via [Common Screen Sizes for Responsive Web Design in 2021](https://gbksoft.com/blog/common-screen-sizes-for-responsive-web-design/) [[+Roam]]
+how to set fixed width on mobile first which expands on a desktop
 
+❍ how to use font sourced from a given URL as specified in style guide
 ❍ How to make "Annual Plan" dark without using inline style on HTML doc
 ❍ Can I avoid using empty divs in html to force empty spaces between elements?
 ❍ Drop shadow on .payment-button colour doesn't seem to match any of the style guide colours
-
-❍ To test in different browsers
-❍ To test in different screen sizes
-
 ❍ When would I group element selectors with similar properties
 e.g. buttons with divs
 
@@ -25,7 +24,6 @@ e.g. buttons with divs
 }
 
 body {
-  background-image: url('order-summary-component-images/pattern-background-desktop.svg');
   background-repeat: no-repeat;
   background-color: hsl(225, 100%, 94%); /*pale blue*/
   line-height: 1.5em;
@@ -33,15 +31,25 @@ body {
   color: hsl(224, 23%, 55%); /*desaturated blue*/
 }
 
-.container {
-  height: 800px;
+.wrapper {
+  border: 4px solid red;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  border: 4px solid red;
+}
+
+.container {
+  border: 1px solid #000;
 }
 
 .empty {
   margin: 40px;
+}
+
+.attribution {
+  border: 1px solid #fff;
 }
 
 h1 {
@@ -126,6 +134,8 @@ strong {
   color: hsl(224, 23%, 55%);
 }
 
+/* ---------------------------- MEDIA QUERIES --------------------------- */
+
 @media (hover: hover) { /* dont really get why this is written like this */
   a:hover {
     opacity: 50%;
@@ -142,6 +152,30 @@ strong {
   }
 
 }
+
+/* Mobile Styles */
+@media only screen and (max-width: 450px) {
+  body {
+    background-image: url('order-summary-component-images/pattern-background-mobile.svg');
+  }
+
+  .wrapper {
+    height: 640px;
+  }
+
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  body {
+      background-image: url('order-summary-component-images/pattern-background-desktop.svg');
+  }
+
+  .wrapper {
+    height: 900px;
+  }
+}
+
 
 /* ------------------------------------------------------------------------
 
