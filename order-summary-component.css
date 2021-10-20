@@ -32,7 +32,7 @@ body {
 }
 
 .wrapper {
-  height: 700px;
+  height: auto;
   border: 4px solid red;
   display: flex;
   align-items: center;
@@ -155,7 +155,7 @@ strong {
 }
 
 /* Mobile Styles */
-@media (max-width: 450px) {
+@media (max-width: 300px) {
   body {
     background-image: url('order-summary-component-images/pattern-background-mobile.svg');
   }
@@ -163,7 +163,7 @@ strong {
 }
 
 /* Desktop Styles */
-@media (min-width: 450px) {
+@media (min-width: 300px) {
   body {
       background-image: url('order-summary-component-images/pattern-background-desktop.svg');
   }
