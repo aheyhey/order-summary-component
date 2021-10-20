@@ -4,46 +4,66 @@
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~HEADER~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
   <head>
     <meta charset="utf-8">
-    <title>Order Summary Component</title>
+
     <link rel="stylesheet" href="order-summary-component.css">
-    <link rel="shortcut icon" type="image/png" href="order-summary-component-images/favicon-32x32.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="order-summary-component-images/favicon-32x32.png"/>
+
+    <title>Frontend Mentor | Order summary card</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution { font-size: 11px; text-align: center; }
+      .attribution a { color: hsl(228, 45%, 44%); }
+    </style>
+
   </head>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~BODY~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
   <body>
 
-    <div class="container">
+      <div class="wrapper">
 
-          <div class="order-box">
+          <!-- <div class="container"> -->
 
-              <h1>Order Summary</h1>
-              <p>You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
+                <div class="order-box">
 
-              <div class="annual-plan-box">
+                    <h1>Order Summary</h1>
+                    <p>You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
 
-                <div class="annual-plan-text">
-                  <p style="color: hsl(223, 47%, 23%)"><strong>Annual Plan</strong></p>
-                  <p>$59.99/year</p>
+                    <div class="annual-plan-box">
+
+                        <div class="annual-plan-text">
+                          <p style="color: hsl(223, 47%, 23%)"><strong>Annual Plan</strong></p>
+                          <p>$59.99/year</p>
+                        </div>
+
+                        <div class="change-button"><p><a href="#">Change</a></p>
+                        </div>
+
+                    </div>
+
+                    <div class="empty">
+                    </div>
+
+                    <a href="#" class="payment-button">Proceed to Payment</a>
+
+                    <div class="empty">
+                    </div>
+
+                    <p class="cancel-button"><a href="#"><strong>Cancel Order</strong></a></p>
+
                 </div>
 
-                <div class="change-button"><p><a href="#">Change</a></p>
-                </div>
+          <!-- </div> -->
 
-              </div>
-
-              <div class="empty">
-              </div>
-
-              <a href="#" class="payment-button">Proceed to Payment</a>
-
-              <div class="empty">
-              </div>
-
-              <p class="cancel-button"><a href="#"><strong>Cancel Order</strong></a></p>
-
+          <div class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+            Coded by <a href="https://www.frontendmentor.io/profile/aheyhey">Christine</a>.
           </div>
 
-    </div>
+      </div>
 
   </body>
 
