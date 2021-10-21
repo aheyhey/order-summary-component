@@ -4,19 +4,15 @@
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~HEADER~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
   <head>
     <meta charset="utf-8">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;500;700;900&display=swap" rel="stylesheet" type='text/css'>
     <link rel="stylesheet" href="order-summary-component.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <meta name="viewport" content="width-device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
     <link rel="icon" type="image/png" sizes="32x32" href="order-summary-component-images/favicon-32x32.png"/>
 
     <title>Frontend Mentor | Order summary card</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution { font-size: 11px; text-align: center; }
-      .attribution a { color: hsl(228, 45%, 44%); }
-    </style>
 
   </head>
 
@@ -29,13 +25,29 @@
 
                 <div class="order-box">
 
-                    <h1>Order Summary</h1>
-                    <p>You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
+                  <!-- <div class="order-box-image">
+                  </div> -->
+
+                  <div class="order-summary">
+
+                    <div class="order-summary-text">
+
+                      <h1>Order Summary</h1>
+                      <p>You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
+
+                    </div>
+
+                    <div class="empty">
+                    </div>
 
                     <div class="annual-plan-box">
 
+                        <div class="music-icon">
+                          <img src="order-summary-component-images/icon-music.svg">
+                        </div>
+
                         <div class="annual-plan-text">
-                          <p style="color: hsl(223, 47%, 23%)"><strong>Annual Plan</strong></p>
+                          <p><strong>Annual Plan</strong></p>
                           <p>$59.99/year</p>
                         </div>
 
@@ -54,16 +66,18 @@
 
                     <p class="cancel-button"><a href="#"><strong>Cancel Order</strong></a></p>
 
+                  </div>
+
                 </div>
 
           <!-- </div> -->
-
-          <div class="attribution">
-            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-            Coded by <a href="https://www.frontendmentor.io/profile/aheyhey">Christine</a>.
-          </div>
-
       </div>
+
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="https://www.frontendmentor.io/profile/aheyhey">Christine</a>.
+      </div>
+
 
   </body>
 
