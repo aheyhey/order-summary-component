@@ -1,22 +1,3 @@
-/* ---------------------------------------------------------------------------------
-
->>>> TO RESOLVE
-
-❍ code responsive, mobile first css
-common screen size is 360×640 – 12.98%__ — via [Common Screen Sizes for Responsive Web Design in 2021](https://gbksoft.com/blog/common-screen-sizes-for-responsive-web-design/) [[+Roam]]
-how to set fixed width on mobile first which expands on a desktop
-
-❍ how to use font sourced from a given URL as specified in style guide
-❍ How to make "Annual Plan" dark without using inline style on HTML doc
-❍ Can I avoid using empty divs in html to force empty spaces between elements?
-❍ Drop shadow on .payment-button colour doesn't seem to match any of the style guide colours
-❍ When would I group element selectors with similar properties
-e.g. buttons with divs
-
-❍ Optomise & organise code better
-
---------------------------------------------------------------------------------- */
-
 * {
   margin: 0;
   padding: 0;
@@ -27,73 +8,99 @@ body {
   background-repeat: no-repeat;
   background-color: hsl(225, 100%, 94%); /*pale blue*/
   line-height: 1.5em;
-  font-family: Red Hat Display, Avenir, sans-serif;
+  font-family: 'Red Hat Display', sans-serif;
   color: hsl(224, 23%, 55%); /*desaturated blue*/
 }
 
 .wrapper {
-  height: auto;
-  border: 4px solid red;
+  height: 700px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  border: 4px solid red;
-}
-
-.container {
-  border: 1px solid #000;
+  background-image: url('order-summary-component-images/pattern-background-mobile.svg');
+  background-repeat: no-repeat;
 }
 
 .empty {
-  margin: 40px;
+  margin: 1.5em;
 }
 
 .attribution {
-  border: 1px solid #fff;
+  font-size: 11px; text-align: center;
 }
 
 h1 {
   color: hsl(223, 47%, 23%); /*dark blue*/
+  font-size: 1.40em;
   font-weight: 900;
-  margin: 20px;
+  margin-bottom: 20px;
 }
 
 p {
-  font-size: 16px;
-  margin: 20px;
+  font-size: 15.5px;
+  line-height: 1.8em;
+  font-weight: 500;
+  color: hsl(224, 23%, 55%);
+}
+
+.annual-plan-text p {
+  line-height: 1.5em;
 }
 
 strong {
   font-weight: 900;
 }
 
+.annual-plan-text strong {
+  color: hsl(223, 47%, 23%);
+}
+
 .order-box {
-  width: 450px;
+  width: 330px;
   height: auto;
-  padding: 250px 50px 30px 50px;
   background-color: #fff;
   text-align: center;
+  border-radius: 20px;
   background-image: url('order-summary-component-images/illustration-hero.svg');
   background-repeat: no-repeat;
   background-size: contain;
-  border-radius: 20px;
+}
+
+.order-summary {
+  padding: 12em 1.4em 1.6em 1.4em;
+}
+
+.order-summary-text {
+  padding: 0 20px 0 20px;
 }
 
 .annual-plan-box {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  padding: 10px;
+  justify-content: space-around;
+  padding: 15px;
   background-color: hsl(225, 100%, 98%);
-  background-image: url('order-summary-component-images/icon-music.svg');
-  background-repeat: no-repeat;
-  background-position: 8% 50%;
 }
 
-.annual-plan-text {
-  padding-right: 50px;
-  line-height: 0.4em;
+img {
+  padding: 0px;
+  margin: 0px;
+}
+
+.music-icon {
+  height: 50px;
+  width: 50px;
+  margin: 0 20px 0 0;
+}
+
+.music-icon img {
+  padding: 0px;
+  margin: 0px;
+}
+
+.change-button {
+  margin-left: auto;
 }
 
 .annual-plan-box, .payment-button {
@@ -102,12 +109,16 @@ strong {
 
 /* ---------------------------- BUTTONS --------------------------- */
 
-.payment-button, .cancel-button, .change-button p {
+.change-button p {
   font-size: 0.9em;
 }
 
-.payment-button, .cancel-button {
+.payment-button, .cancel-button, .change-button p {
   font-weight: 700;
+}
+
+.payment-button, .cancel-button {
+  letter-spacing: normal;
 }
 
 .change-button a {
@@ -118,13 +129,18 @@ strong {
 .payment-button {
   text-decoration: none;
   color: #fff;
-  padding: 15px 106px 15px 106px;
+  padding: 15px;
   background-color: hsl(245, 75%, 52%); /*bright blue*/
   filter: drop-shadow(0 20px 1em #e0e8ff); /* replace with e0e8ff */
+  display: block;
 }
 
 .cancel-button {
   color: hsl(224, 23%, 55%); /*desat blue*/
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
 
 .payment-button a, .cancel-button a {
@@ -155,86 +171,68 @@ strong {
 }
 
 /* Mobile Styles */
-@media (max-width: 300px) {
-  body {
-    background-image: url('order-summary-component-images/pattern-background-mobile.svg');
-  }
+@media (max-width: 375px) {
 
 }
 
 /* Desktop Styles */
-@media (min-width: 300px) {
+@media (min-width: 550px) and (max-width: 1440px){
+
   body {
       background-image: url('order-summary-component-images/pattern-background-desktop.svg');
   }
 
+  h1 {
+    font-size: 1.8em;
+  }
+
+  strong {
+    font-weight: 700;
+  }
+
+  .order-box {
+    width: 430px;
+    padding: 20px;
+  }
+
+  .order-summary {
+    padding: 220px 1em 1em 1em;
+  }
+
+  .order-summary-text {
+    padding: 0 20px 0 20px;
+  }
+
+  .annual-plan-box {
+    padding: 20px;
+  }
+
+  .payment-button, .cancel-button {
+    font-size: 0.9em;
+    font-weight: 700;
+  }
+
   .wrapper {
-    height: 900px;
+    height: 870px;
   }
 }
 
+/* --------------------------------DEBUG-------------------------------- 
 
-/* ------------------------------------------------------------------------
+.order-summary-text, .music-icon, .annual-plan-text, .change-button {
+  border: 1px solid blue;
+}
 
-RESOLVED
+.wrapper {
+  border: 4px solid red;
+}
 
-✔️ Too much spacing at the bottom of order-box container
-Adjusted padding-bottom value
+.container {
+  border: 1px solid #000;
+}
 
-✔️ How to position elements in annual plan box - does it make sense to have multiple divs?? isn't that overkill?
-I don't think there's a way around divs
-Ended up using two divs (1) for annual text (2) "change" link
-Then pushed them all alongside each other within containing div using display text
+.attribution {
+  border: 1px solid red;
+}
 
-✔️ Annual plan is dark - but not sure how to show this - do I have to yet create another class???
-... used inline style in HTML doc as a just-for-now workaround to achieve the result
-
-✔️ How to make "Proceed to Payment" clickable as an entire button but still flow with the div specs of order
-For a long time I was struggling with the Payment button only being as wide as the content as a clickable button
-Tried setting "width property but the browser would ignore the rule.
-Found out I just needed to adjust the padding size lol
-I think I wanted to find a way to get the payment button to inherit the width of the order-box container div so I didn't have to manually set the values
-I learnt today that some properties are not inheritable, width being one of them (15/10)
-So I just adjusted the padding pixel by pixel until it broke out of the containing div width
-
-✔️ Position the order box in the middle of the screen relative to the user browser
-I couldn't place it relative to user browser, I could set a value for padding-top but it wouldn't be exactly center to however you size the screen
-For the display flex to work properly it seems you need to set a height so it knows where to center - but I don't know how this will translate to bigger screens
-
---------------------------- FROM STYLE GUIDE COPY ------------------------------
-
-# Front-end Style Guide
-
-## Layout
-
-The designs were created to the following widths:
-
-- Mobile: 375px
-- Desktop: 1440px
-
-## Colors
-
-### Primary
-
-- Pale blue: hsl(225, 100%, 94%)
-- Bright blue: hsl(245, 75%, 52%)
-
-### Neutral
-
-- Very pale blue: hsl(225, 100%, 98%)
-- Desaturated blue: hsl(224, 23%, 55%)
-- Dark blue: hsl(223, 47%, 23%)
-
-## Typography
-
-### Body Copy
-
-- Font size (paragraph): 16px
-
-### Font
-
-- Family: [Red Hat Display](https://fonts.google.com/specimen/Red+Hat+Display)
-- Weights: 500, 700, 900
-
-
-------------------------------------------------------------------------*/
+------------------------------- ------------------------------- */
