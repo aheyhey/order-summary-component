@@ -48,20 +48,21 @@ Users should be able to:
 Inspired by [MDN's guidelines](https://developer.mozilla.org/en-US/docs/MDN/Guidelines/Code_guidelines/CSS#use_mobile_first_media_queries)
 
 - Order of classes and corresponding properties
-Classes for each section (debugging, general, component etc.) is listed that we see them on the final webpage - top to bottom, left to right
-Major sections are listed starting from biggest box to smallest (outside to inside)
-Any specific styles related to a class is listed right underneath instead of collecting all similar selectors together
-?? Not sure how to organise:
-- multiple selectors that share the same properties and values, but I've just added them after the code for the individual selector
-- multiple selectors from different sections that share the same properties and values, in this case, I've added the code right after the last selector
+  - Classes for each section (debugging, general, component etc.) is listed that we see them on the final webpage - top to bottom, left to right
+  - Major sections are listed starting from biggest box to smallest (outside to inside)
+  - Any specific styles related to a class is listed right underneath instead of collecting all similar selectors together
 
-Opting for readability
-- Expanded syntax
-- Multiple selectors on separate lines
-- Comments placed on separate lines preceding the code they are referring to
-- Longhand rules over terse shorthand - easier for me as I'm still a beginner at all this
-- Set px instead of relative sizes for component box as resizing the desktop window will break the parts in an unreadable way
-- maybe there's a way around but at the moment I think it's easier to see
+- ?? Not sure how to organise:
+  - multiple selectors that share the same properties and values, but I've just added them after the code for the individual selector
+  - multiple selectors from different sections that share the same properties and values, in this case, I've added the code right after the last selector
+
+- Opting for readability
+  - Expanded syntax
+  - Multiple selectors on separate lines
+  - Comments placed on separate lines preceding the code they are referring to
+  - Longhand rules over terse shorthand - easier for me as I'm still a beginner at all this
+  - Set px instead of relative sizes for component box as resizing the desktop window will break the parts in an unreadable way
+  - maybe there's a way around but at the moment I think it's easier to see
 
 ## My process
 
