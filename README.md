@@ -8,7 +8,7 @@ This is my solution to the [Order summary card challenge on Frontend Mentor](htt
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshots)
   - [Links](#links)
-  - [Still to resolve](#❗️-issues-still-to-resolve-❗️)
+  - [❗️ Still to resolve](#issues-still-to-resolve)
   - [Style Guide](#style-guide)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -35,7 +35,7 @@ Users should be able to:
 - Solution URL: [https://github.com/aheyhey/order-summary-component](https://github.com/aheyhey/order-summary-component)
 - Live Site URL: [https://aheyhey.github.io/order-summary-component/](https://aheyhey.github.io/order-summary-component/)
 
-### ❗️ Issues still to resolve ❗️
+### ❗Issues still to resolve
 
 - I coded and tested everything using Atom Editor and a browser - when I manually input new code and updated the css on Github, the code broke unexpectedly, something to do with the browser settings itself?
 - Seems to be a delay (several minutes) on Github pages updating whenever I made any commits, don't like that the changes are not instantaneous, ruins workflow
@@ -43,7 +43,7 @@ Users should be able to:
 - Don't know which height to set for mobile and desktop, but it seems to be needed for flexbox center position to work
 - Fine-tuning the fonts, haven't subscribed to pro yet so don't have access to the design files
 
-### Style Guide
+### Style guide
 
 Inspired by [MDN's guidelines](https://developer.mozilla.org/en-US/docs/MDN/Guidelines/Code_guidelines/CSS#use_mobile_first_media_queries)
 
