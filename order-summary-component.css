@@ -1,3 +1,33 @@
+/* ---------------------------  STYLE GUIDE - inspired by MDN's guidelines https://developer.mozilla.org/en-US/docs/MDN/Guidelines/Code_guidelines/CSS#use_mobile_first_media_queries
+
+- Order of classes and corresponding properties 
+Classes for each section (debugging, general, component etc.) is listed that we see them on the final webpage - top to bottom, left to right
+Major sections are listed starting from biggest box to smallest (outside to inside)
+Any specific styles related to a class is listed right underneath instead of collecting all similar selectors togther 
+Not sure if there's a better way or better place to list multiple selectors that share the same properties and values, but I've just added them after the code for the individual selector
+
+- Expanded syntax
+- Multiple selectors on separate lines
+- Comments placed on separate lines preceding the code they are referring to
+- Longhand rules over terse shorthand - easier for me as I'm still a beginner at all this
+
+*/
+/* --------------------------------DEBUGGING */
+
+.wrapper, 
+.empty, 
+.attribution, 
+.order-box, 
+.order-summary, 
+.order-summary-text, 
+.annual-plan-box, 
+.annual-plan-text, 
+.music-icon, 
+.change-button, 
+.payment-button {
+  border: 1px solid red;
+}
+
 /* ---------------------------  GENERAL */
 
 * {
@@ -9,13 +39,16 @@
 body {
   line-height: 1.5em;
   font-family: 'Red Hat Display', sans-serif;
-  color: hsl(224, 23%, 55%); /*desaturated blue*/
+  /*desaturated blue*/
+  color: hsl(224, 23%, 55%); 
   background-repeat: no-repeat;
-  background-color: hsl(225, 100%, 94%); /*pale blue*/
+  /*pale blue*/
+  background-color: hsl(225, 100%, 94%); 
 }
 
 h1 {
-  color: hsl(223, 47%, 23%); /*dark blue*/
+  /*dark blue*/
+  color: hsl(223, 47%, 23%); 
   font-size: 1.5em;
   font-weight: 900;
   margin-bottom: 20px;
@@ -28,14 +61,17 @@ p {
   color: hsl(224, 23%, 55%);
 }
 
+strong {
+  font-weight: 900;
+}
+
+
 img {
   padding: 0px;
   margin: 0px;
 }
 
-strong {
-  font-weight: 900;
-}
+/* ---------------------------  OVERALL WEBPAGE */
 
 .wrapper {
   height: 700px;
@@ -53,7 +89,8 @@ strong {
 
 /* ---------------------------  COMPONENT */
 
-.order-box {
+/* the containing box for the entire component */
+.order-box { 
   width: 330px;
   height: auto;
   background-color: #fff;
@@ -64,7 +101,8 @@ strong {
   background-size: contain;
 }
 
-.order-summary {
+/* containing box for the content of the component */
+.order-summary { 
   padding: 200px 20px 10px 20px;
 }
 
@@ -80,6 +118,12 @@ strong {
   background-color: hsl(225, 100%, 98%);
 }
 
+.music-icon {
+  height: 50px;
+  width: 50px;
+  margin: 0 20px 0 0;
+}
+
 .annual-plan-text p {
   line-height: 1.5em;
 }
@@ -88,13 +132,8 @@ strong {
   color: hsl(223, 47%, 23%);
 }
 
-.music-icon {
-  height: 50px;
-  width: 50px;
-  margin: 0 20px 0 0;
-}
-
-.annual-plan-box, .payment-button {
+.annual-plan-box, 
+.payment-button {
   border-radius: 10px;
 }
 
@@ -113,37 +152,46 @@ strong {
   text-decoration: none;
   color: #fff;
   padding: 15px;
-  background-color: hsl(245, 75%, 52%); /*bright blue*/
+  /*bright blue*/
+  background-color: hsl(245, 75%, 52%); 
   filter: drop-shadow(0 20px 1em #e1defb);
   display: block;
 }
 
 .cancel-button {
-  font-size: 1.1em;
-  color: hsl(224, 23%, 55%); /*desat blue*/
+  font-size: 1.05em;
+  /*desat blue*/
+  color: hsl(224, 23%, 55%); 
+  /* on mobile version order-summary overlaps with order-box instead of fitting into the box, but superficially looks correct */
   margin-bottom: 20px; 
 }
 
-.annual-plan-text, .change-button p {
+.annual-plan-text p, 
+.change-button p {
   font-size: 0.9em;
 }
 
-.change-button p, .payment-button, .cancel-button, {
+.change-button p, 
+.payment-button, 
+.cancel-button, {
   font-weight: 700;
 }
 
-.payment-button, .cancel-button {
+.payment-button, 
+.cancel-button {
   letter-spacing: normal;
 }
 
-/* --------------- LINKS */
+/* --------| LINKS */
 
 .change-button a {
   font-weight: 700;
-  color: hsl(245, 75%, 52%); /*bright blue*/
+  /*bright blue*/
+  color: hsl(245, 75%, 52%); 
 }
 
-.payment-button a, .cancel-button a {
+.payment-button a, 
+.cancel-button a {
   text-decoration: none;
 }
 
@@ -157,7 +205,9 @@ strong {
 
 /* ---------------------------- MEDIA QUERIES */
 
-@media (hover: hover) { /* dont really get why this is written like this */
+/* --------| LINK HOVER */
+
+@media (hover: hover) { 
   a:hover {
     opacity: 50%;
     filter: drop-shadow(0 20px 1em #e1defb);
@@ -165,7 +215,8 @@ strong {
 
   .cancel-button a:hover {
     opacity: 100%;
-    color: hsl(223, 47%, 23%); /*dark blue*/
+    /*dark blue*/
+    color: hsl(223, 47%, 23%); 
     font-weight: 900;
   }
 
@@ -175,15 +226,16 @@ strong {
 
 }
 
-*/ || Mobile Styles */
-@media screen and (max-width: 375px) {
+/* --------| MOBILE STYLES
+not sure whether this needs to be defined when everything in css doc is already formatted for mobile */
 
-  }
+@media screen and (max-width: 375px) {
   
 }
 
-/* || Desktop Styles */
-@media screen and (min-width: 800px) and (max-width: 1440px){
+/* --------| DESKTOP STYLES */
+
+@media screen and (min-width: 500px) and (max-width: 1440px){
 
   body {
       background-image: url('order-summary-component-images/pattern-background-desktop.svg');
@@ -223,10 +275,4 @@ strong {
     font-weight: 700;
   }
 
-}
-
-/* --------------------------------DEBUGGING */
-
-.wrapper, .empty, .attribution, .order-box, .order-summary, .order-summary-text, .annual-plan-box, .annual-plan-text, .music-icon, .change-button, .payment-button {
-  border: 1px solid red;
 }
