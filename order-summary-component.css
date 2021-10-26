@@ -11,6 +11,8 @@ Not sure if there's a better way or better place to list multiple selectors that
 - Comments placed on separate lines preceding the code they are referring to
 - Longhand rules over terse shorthand - easier for me as I'm still a beginner at all this
 
+Chose not to use relative sizes for this component as resizing the desktop window will break the component - maybe there's a way around but at the moment I think it's easier to see 
+
 */
 /* --------------------------------DEBUGGING */
 
@@ -137,7 +139,9 @@ img {
   border-radius: 10px;
 }
 
-.order-summary-text, .annual-plan-box, .payment-button {
+.order-summary-text, 
+.annual-plan-box, 
+.payment-button {
   margin-bottom: 20px;
 }
 
@@ -145,6 +149,10 @@ img {
 
 .change-button {
   margin-left: auto;
+}
+
+.change-button p {
+  font-size: 0.9em;
 }
 
 .payment-button {
@@ -164,11 +172,6 @@ img {
   color: hsl(224, 23%, 55%); 
   /* on mobile version order-summary overlaps with order-box instead of fitting into the box, but superficially looks correct */
   margin-bottom: 20px; 
-}
-
-.annual-plan-text p, 
-.change-button p {
-  font-size: 0.9em;
 }
 
 .change-button p, 
