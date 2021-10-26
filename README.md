@@ -8,7 +8,7 @@ This is my solution to the [Order summary card challenge on Frontend Mentor](htt
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshots)
   - [Links](#links)
-  - [Still to resolve](#issues-still-to-resolve)
+  - [Still to resolve](#❗️-issues-still-to-resolve-❗️)
   - [Style Guide](#style-guide)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -35,7 +35,7 @@ Users should be able to:
 - Solution URL: [https://github.com/aheyhey/order-summary-component](https://github.com/aheyhey/order-summary-component)
 - Live Site URL: [https://aheyhey.github.io/order-summary-component/](https://aheyhey.github.io/order-summary-component/)
 
-### Issues still to resolve ❗️
+### ❗️ Issues still to resolve ❗️
 
 - I coded and tested everything using Atom Editor and a browser - when I manually input new code and updated the css on Github, the code broke unexpectedly, something to do with the browser settings itself?
 - Seems to be a delay (several minutes) on Github pages updating whenever I made any commits, don't like that the changes are not instantaneous, ruins workflow
