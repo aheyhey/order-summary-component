@@ -256,7 +256,7 @@ not sure whether this needs to be defined when everything in css doc is already 
     margin-bottom: 20px;
   }
   
-  .payment-button strong, .cancel-button strong {
+  .payment-button strong {
     font-weight: 700;
   }
   
