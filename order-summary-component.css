@@ -231,10 +231,6 @@ not sure whether this needs to be defined when everything in css doc is already 
     font-size: 1.8em;
   }
 
-  strong {
-    font-weight: 900;
-  }
-
   .wrapper {
     height: 870px;
   }
@@ -260,6 +256,10 @@ not sure whether this needs to be defined when everything in css doc is already 
     margin-bottom: 20px;
   }
   
+  .payment-button strong {
+    font-weight: 700;
+  }
+  
   .cancel-button {
     margin-bottom: 0;
   }
@@ -267,6 +267,7 @@ not sure whether this needs to be defined when everything in css doc is already 
   .payment-button, 
   .cancel-button {
     font-size: 0.9em;
+    
   }
 
 }
