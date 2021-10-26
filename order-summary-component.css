@@ -154,7 +154,6 @@ img {
   /*desat blue*/
   color: hsl(224, 23%, 55%); 
   /* on mobile version order-summary overlaps with order-box instead of fitting into the box, but superficially looks correct */
-  padding-top: 5px;
   margin-bottom: 20px; 
 }
 
@@ -169,8 +168,8 @@ img {
    font-size: 1em;
 }
 
-.payment-button, .change-button p {
-  letter-spacing: 0.01em;
+.payment-button, .cancel-button p {
+  letter-spacing: 0.005em;
 }
 
 /* --------| LINKS */
