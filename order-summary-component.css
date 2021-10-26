@@ -142,7 +142,6 @@ img {
 .payment-button {
   display: block;
   text-decoration: none;
-  letter-spacing: 0.1em;
   color: #fff;
   padding: 15px;
   /*bright blue*/
@@ -155,6 +154,7 @@ img {
   /*desat blue*/
   color: hsl(224, 23%, 55%); 
   /* on mobile version order-summary overlaps with order-box instead of fitting into the box, but superficially looks correct */
+  padding-top: 10px;
   margin-bottom: 20px; 
 }
 
@@ -167,6 +167,10 @@ img {
 .annual-plan-text p, 
 .payment-button {
    font-size: 1em;
+}
+
+.payment-button, .change-button p {
+  letter-spacing: 0.05em;
 }
 
 /* --------| LINKS */
@@ -242,11 +246,11 @@ not sure whether this needs to be defined when everything in css doc is already 
 
   .order-box {
     width: 430px;
-    padding: 20px;
+    padding: 20px 30px 20px 30px;
   }
 
   .order-summary {
-    padding: 240px 1.1em 1em 1.1em;
+    padding: 240px 1em 1em 1em;
   }
 
   .order-summary-text {
@@ -266,7 +270,7 @@ not sure whether this needs to be defined when everything in css doc is already 
   }
   
   .cancel-button {
-    padding-top: 20px;
+    padding-top: 10px;
     margin-bottom: 0;
   }
   
