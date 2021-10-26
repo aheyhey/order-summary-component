@@ -172,6 +172,7 @@ strong {
     opacity: 100%;
     color: hsl(223, 47%, 23%); /*dark blue*/
     font-weight: 900;
+    filter: drop-shadow(0 20px 1em #e1defb);
   }
 
   .change-button a:hover{
@@ -180,11 +181,10 @@ strong {
 
 }
 
-/* || Mobile Styles
+|| Mobile Styles
 @media (max-width: 375px) {
 
 }
-*/
 
 /* || Desktop Styles */
 @media screen and (min-width: 500px) and (max-width: 1440px){
