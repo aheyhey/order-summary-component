@@ -35,6 +35,13 @@ strong {
   font-weight: 900;
 }
 
+
+/* --------------------------------DEBUG-------------------------------- */
+
+.wrapper, .empty, .attribution, .order-box, .order-summary, .order-summary-text, .annual-plan-box, .annual-plan-text, .music-icon, .change-button, .payment-button {
+  border: 1px solid red;
+}
+
 /* ---------------------------  GENERAL */
 
 .wrapper {
@@ -84,14 +91,14 @@ strong {
   background-color: hsl(225, 100%, 98%);
 }
 
+.annual-plan-text p {
+  line-height: 1.5em;
+}
+
 .music-icon {
   height: 50px;
   width: 50px;
   margin: 0 20px 0 0;
-}
-
-.annual-plan-text p {
-  line-height: 1.5em;
 }
 
 .change-button {
@@ -148,20 +155,6 @@ strong {
 
 .cancel-button a {
   color: hsl(224, 23%, 55%);
-}
-
-/* --------------------------------DEBUG-------------------------------- */
-
-.wrapper, .order-summary, .order-box, .attribution {
-  border: 1px solid red;
-}
-
-.annual-plan-text, .order-summary-text, .music-icon, .annual-plan-text, .change-button {
-  border: 1px solid blue;
-}
-
-.container {
-  border: 1px solid #000;
 }
 
 /* ---------------------------- MEDIA QUERIES */
