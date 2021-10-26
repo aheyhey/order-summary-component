@@ -169,11 +169,10 @@ strong {
 
 }
 
-/* || Mobile Styles
-@media (max-width: 375px) {
+/* || Mobile Styles */
+@media screen and (max-width: 375px) {
 
 }
-*/
 
 /* || Desktop Styles */
 @media screen and (max-width: 1440px){
@@ -200,15 +199,15 @@ strong {
   }
 
   .order-summary {
-    padding: 220px 1em 1em 1em;
+    padding: 0;
   }
 
   .order-summary-text {
-    padding: 0 20px 0 20px;
+    padding: 0;
   }
 
   .annual-plan-box {
-    padding: 10 px;
+    padding: 0;
   }
 
   .payment-button, .cancel-button {
