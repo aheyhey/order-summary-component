@@ -157,19 +157,15 @@ img {
   margin-bottom: 20px; 
 }
 
-.change-button p, 
 .payment-button, 
-.cancel-button, {
+.cancel-button p, {
   font-weight: 700;
+  letter-spacing: 0.005em;
 }
 
 .annual-plan-text p, 
 .payment-button {
    font-size: 1em;
-}
-
-.payment-button, .cancel-button p {
-  letter-spacing: 0.005em;
 }
 
 /* --------| LINKS */
@@ -262,10 +258,6 @@ not sure whether this needs to be defined when everything in css doc is already 
   
   .order-summary-text {
     margin-bottom: 20px;
-  }
-
-  .payment-button {
-    font-weight: 700;
   }
   
   .cancel-button {
