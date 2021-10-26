@@ -213,11 +213,12 @@ img {
 }
 
 /* --------| MOBILE STYLES
-not sure whether this needs to be defined when everything in css doc is already formatted for mobile */
+not sure whether this needs to be defined when everything in css doc is already formatted for mobile 
 
 @media screen and (max-width: 375px) {
   
 }
+*/
 
 /* --------| DESKTOP STYLES */
 
