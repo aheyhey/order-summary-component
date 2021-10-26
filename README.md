@@ -35,7 +35,7 @@ Users should be able to:
 - Solution URL: [https://github.com/aheyhey/order-summary-component](https://github.com/aheyhey/order-summary-component)
 - Live Site URL: [https://aheyhey.github.io/order-summary-component/](https://aheyhey.github.io/order-summary-component/)
 
-### Issues still to resolve
+### Issues still to resolve ❗️
 
 - I coded and tested everything using Atom Editor and a browser - when I manually input new code and updated the css on Github, the code broke unexpectedly, something to do with the browser settings itself?
 - Seems to be a delay (several minutes) on Github pages updating whenever I made any commits, don't like that the changes are not instantaneous, ruins workflow
