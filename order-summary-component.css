@@ -1,5 +1,3 @@
---------------------------- GENERAL STYLES */
-
 * {
   margin: 0;
   padding: 0;
@@ -93,7 +91,7 @@ strong {
 }
 
 .annual-plan-text p {
-  line-height: 1em;
+  line-height: 1.5em;
 }
 
 .change-button {
@@ -172,7 +170,7 @@ strong {
 }
 
 /* || Mobile Styles
-@media screen and (max-width: 375px) {
+@media (max-width: 375px) {
 
 }
 */
@@ -202,7 +200,7 @@ strong {
   }
 
   .order-summary {
-    padding: 220px 1.4em 1em 1.4em;
+    padding: 220px 1em 1em 1em;
   }
 
   .order-summary-text {
@@ -210,7 +208,7 @@ strong {
   }
 
   .annual-plan-box {
-    padding: 20 px;
+    padding: 20px;
   }
 
   .payment-button, .cancel-button {
