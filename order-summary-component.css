@@ -152,24 +152,16 @@ strong {
 
 /* --------------------------------DEBUG-------------------------------- */
 
-.order-summary-text, .music-icon, .annual-plan-text, .change-button {
-  border: 1px solid blue;
-}
-
-.wrapper {
-  border: 4px solid red;
-}
-
-.order-summary {
+.wrapper, .order-summary, .order-box, .attribution {
   border: 1px solid red;
+}
+
+.annual-plan-text, .order-summary-text, .music-icon, .annual-plan-text, .change-button {
+  border: 1px solid blue;
 }
 
 .container {
   border: 1px solid #000;
-}
-
-.attribution {
-  border: 1px solid red;
 }
 
 /* ---------------------------- MEDIA QUERIES */
