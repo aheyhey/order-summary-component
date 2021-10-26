@@ -42,7 +42,7 @@ h1 {
 }
 
 p {
-  font-size: 15.5px;
+  font-size: 16px;
   line-height: 1.8em;
   font-weight: 500;
   color: hsl(224, 23%, 55%);
@@ -137,6 +137,7 @@ img {
 
 .change-button p {
   font-size: 0.9em;
+  font-weight: 700;
 }
 
 .payment-button {
@@ -171,7 +172,6 @@ img {
 /* --------| LINKS */
 
 .change-button a {
-  font-weight: 700;
   /*bright blue*/
   color: hsl(245, 75%, 52%); 
 }
@@ -228,7 +228,7 @@ not sure whether this needs to be defined when everything in css doc is already 
   }
 
   h1 {
-    font-size: 1.8em;
+    font-size: 1.5em;
   }
 
   .wrapper {
@@ -256,7 +256,7 @@ not sure whether this needs to be defined when everything in css doc is already 
     margin-bottom: 20px;
   }
   
-  .payment-button strong {
+  .payment-button strong, .cancel-button strong {
     font-weight: 700;
   }
   
