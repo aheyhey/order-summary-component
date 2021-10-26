@@ -93,7 +93,7 @@ strong {
 }
 
 .annual-plan-text p {
-  line-height: 1.5em;
+  line-height: 1em;
 }
 
 .change-button {
@@ -197,12 +197,12 @@ strong {
   }
 
   .order-box {
-    width: 430px;
+    width: 400px;
     padding: 20px;
   }
 
   .order-summary {
-    padding: 220px 1em 1em 1em;
+    padding: 220px 1.4em 1em 1.4em;
   }
 
   .order-summary-text {
