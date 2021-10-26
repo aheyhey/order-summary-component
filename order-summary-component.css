@@ -52,7 +52,6 @@ strong {
   font-weight: 900;
 }
 
-
 img {
   padding: 0px;
   margin: 0px;
@@ -141,13 +140,14 @@ img {
 }
 
 .payment-button {
+  display: block;
   text-decoration: none;
+  letter-spacing: 0.1em;
   color: #fff;
   padding: 15px;
   /*bright blue*/
   background-color: hsl(245, 75%, 52%); 
-  filter: drop-shadow(0 20px 1em #e1defb);
-  display: block;
+  filter: drop-shadow(0 20px 1em #e1ddf8);
 }
 
 .cancel-button {
@@ -164,12 +164,8 @@ img {
   font-weight: 700;
 }
 
-.payment-button, 
-.cancel-button {
-  letter-spacing: normal;
-}
-
-.annual-plan-text p, .payment-button {
+.annual-plan-text p, 
+.payment-button {
    font-size: 1em;
 }
 
@@ -237,7 +233,7 @@ not sure whether this needs to be defined when everything in css doc is already 
   }
 
   strong {
-    font-weight: 700;
+    font-weight: 900;
   }
 
   .wrapper {
@@ -250,7 +246,7 @@ not sure whether this needs to be defined when everything in css doc is already 
   }
 
   .order-summary {
-    padding: 240px 1em 1em 1em;
+    padding: 240px 1.1em 1em 1.1em;
   }
 
   .order-summary-text {
@@ -260,15 +256,23 @@ not sure whether this needs to be defined when everything in css doc is already 
   .annual-plan-box {
     padding: 20px;
   }
+  
+  .order-summary-text {
+    margin-bottom: 20px;
+  }
 
   .payment-button {
-    font-size: 0.9em;
     font-weight: 700;
   }
   
   .cancel-button {
-    font-weight: 900;
+    padding-top: 20px;
     margin-bottom: 0;
+  }
+  
+  .payment-button, 
+  .cancel-button {
+    font-size: 0.9em;
   }
 
 }
