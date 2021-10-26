@@ -194,7 +194,7 @@ strong {
 */
 
 /* || Desktop Styles */
-@media screen and (max-width: 1440px){
+@media screen and (min-width) and (max-width: 1440px){
 
   body {
       background-image: url('order-summary-component-images/pattern-background-desktop.svg');
