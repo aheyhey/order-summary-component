@@ -1,3 +1,5 @@
+/* ---------------------------  GENERAL */
+
 * {
   margin: 0;
   padding: 0;
@@ -35,14 +37,6 @@ strong {
   font-weight: 900;
 }
 
-/* --------------------------------DEBUGGING */
-
-.wrapper, .empty, .attribution, .order-box, .order-summary, .order-summary-text, .annual-plan-box, .annual-plan-text, .music-icon, .change-button, .payment-button {
-  border: 1px solid red;
-}
-
-/* ---------------------------  GENERAL */
-
 .wrapper {
   height: 700px;
   display: flex;
@@ -52,10 +46,6 @@ strong {
   background-image: url('order-summary-component-images/pattern-background-mobile.svg');
   background-repeat: no-repeat;
 }
-
-/* .empty {
-  margin: 1.5em;
-} */
 
 .attribution {
   font-size: 11px; text-align: center;
@@ -94,14 +84,14 @@ strong {
   line-height: 1.5em;
 }
 
+.annual-plan-text strong {
+  color: hsl(223, 47%, 23%);
+}
+
 .music-icon {
   height: 50px;
   width: 50px;
   margin: 0 20px 0 0;
-}
-
-.change-button {
-  margin-left: auto;
 }
 
 .annual-plan-box, .payment-button {
@@ -112,31 +102,14 @@ strong {
   margin-bottom: 20px;
 }
 
+/* ---------------------------- BUTTONS */
 
-/* ---------------------------- BUTTON & LINKS */
-
-.payment-button, .cancel-button, .change-button p {
-  font-size: 0.95em;
-}
-
-.payment-button, .cancel-button, .change-button p {
-  font-weight: 700;
-}
-
-.payment-button, .cancel-button {
-  letter-spacing: normal;
-}
-
-.annual-plan-text strong {
-  color: hsl(223, 47%, 23%);
-}
-
-.change-button a {
-  font-weight: 700;
-  color: hsl(245, 75%, 52%); /*bright blue*/
+.change-button {
+  margin-left: auto;
 }
 
 .payment-button {
+  font-size: 1em;
   text-decoration: none;
   color: #fff;
   padding: 15px;
@@ -146,11 +119,28 @@ strong {
 }
 
 .cancel-button {
+  font-size: 1.1em;
   color: hsl(224, 23%, 55%); /*desat blue*/
+  margin-bottom: 20px; 
 }
 
-.attribution a {
-  color: hsl(228, 45%, 44%);
+.annual-plan-text, .change-button p {
+  font-size: 0.9em;
+}
+
+.change-button p, .payment-button, .cancel-button, {
+  font-weight: 700;
+}
+
+.payment-button, .cancel-button {
+  letter-spacing: normal;
+}
+
+/* --------------- LINKS */
+
+.change-button a {
+  font-weight: 700;
+  color: hsl(245, 75%, 52%); /*bright blue*/
 }
 
 .payment-button a, .cancel-button a {
@@ -159,6 +149,10 @@ strong {
 
 .cancel-button a {
   color: hsl(224, 23%, 55%);
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
 
 /* ---------------------------- MEDIA QUERIES */
@@ -184,6 +178,8 @@ strong {
 */ || Mobile Styles */
 @media screen and (max-width: 375px) {
 
+  }
+  
 }
 
 /* || Desktop Styles */
@@ -227,4 +223,10 @@ strong {
     font-weight: 700;
   }
 
+}
+
+/* --------------------------------DEBUGGING */
+
+.wrapper, .empty, .attribution, .order-box, .order-summary, .order-summary-text, .annual-plan-box, .annual-plan-text, .music-icon, .change-button, .payment-button {
+  border: 1px solid red;
 }
