@@ -172,13 +172,13 @@ strong {
 }
 
 /* || Mobile Styles
-@media (max-width: 375px) {
+@media screen and (max-width: 375px) {
 
 }
 */
 
 /* || Desktop Styles */
-@media (min-width: 375px) and (max-width: 1440px){
+@media screen and (max-width: 1440px){
 
   body {
       background-image: url('order-summary-component-images/pattern-background-desktop.svg');
@@ -197,8 +197,8 @@ strong {
   }
 
   .order-box {
-    width: 400px;
-    padding: 50px;
+    width: 430px;
+    padding: 20px;
   }
 
   .order-summary {
@@ -210,7 +210,7 @@ strong {
   }
 
   .annual-plan-box {
-    padding: 10 px;
+    padding: 20 px;
   }
 
   .payment-button, .cancel-button {
