@@ -35,8 +35,12 @@ strong {
   font-weight: 900;
 }
 
+.order-summary-text, .annual-plan-box, .payment-button {
+  margin-bottom: 20px;
+}
 
-/* --------------------------------DEBUG-------------------------------- */
+
+/* --------------------------------DEBUGGING */
 
 .wrapper, .empty, .attribution, .order-box, .order-summary, .order-summary-text, .annual-plan-box, .annual-plan-text, .music-icon, .change-button, .payment-button {
   border: 1px solid red;
@@ -54,9 +58,9 @@ strong {
   background-repeat: no-repeat;
 }
 
-.empty {
+/* .empty {
   margin: 1.5em;
-}
+} */
 
 .attribution {
   font-size: 11px; text-align: center;
