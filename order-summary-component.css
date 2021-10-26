@@ -264,6 +264,10 @@ not sure whether this needs to be defined when everything in css doc is already 
     margin-bottom: 0;
   }
   
+  .cancel-button strong {
+    font-weight: 900;
+  }
+  
   .payment-button, 
   .cancel-button {
     font-size: 0.9em;
