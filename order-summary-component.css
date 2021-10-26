@@ -35,11 +35,6 @@ strong {
   font-weight: 900;
 }
 
-.order-summary-text, .annual-plan-box, .payment-button {
-  margin-bottom: 20px;
-}
-
-
 /* --------------------------------DEBUGGING */
 
 .wrapper, .empty, .attribution, .order-box, .order-summary, .order-summary-text, .annual-plan-box, .annual-plan-text, .music-icon, .change-button, .payment-button {
@@ -113,6 +108,11 @@ strong {
   border-radius: 10px;
 }
 
+.order-summary-text, .annual-plan-box, .payment-button {
+  margin-bottom: 20px;
+}
+
+
 /* ---------------------------- BUTTON & LINKS */
 
 .payment-button, .cancel-button, .change-button p {
@@ -166,13 +166,13 @@ strong {
 @media (hover: hover) { /* dont really get why this is written like this */
   a:hover {
     opacity: 50%;
+    filter: drop-shadow(0 20px 1em #e1defb);
   }
 
   .cancel-button a:hover {
     opacity: 100%;
     color: hsl(223, 47%, 23%); /*dark blue*/
     font-weight: 900;
-    filter: drop-shadow(0 20px 1em #e1defb);
   }
 
   .change-button a:hover{
@@ -181,13 +181,13 @@ strong {
 
 }
 
-|| Mobile Styles
-@media (max-width: 375px) {
+*/ || Mobile Styles */
+@media screen and (max-width: 375px) {
 
 }
 
 /* || Desktop Styles */
-@media screen and (min-width: 500px) and (max-width: 1440px){
+@media screen and (min-width: 800px) and (max-width: 1440px){
 
   body {
       background-image: url('order-summary-component-images/pattern-background-desktop.svg');
