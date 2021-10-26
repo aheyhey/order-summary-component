@@ -250,7 +250,7 @@ not sure whether this needs to be defined when everything in css doc is already 
   }
 
   .order-summary {
-    padding: 220px 1em 1em 1em;
+    padding: 240px 1em 1em 1em;
   }
 
   .order-summary-text {
@@ -261,9 +261,14 @@ not sure whether this needs to be defined when everything in css doc is already 
     padding: 20px;
   }
 
-  .payment-button, .cancel-button {
+  .payment-button {
     font-size: 0.9em;
     font-weight: 700;
+  }
+  
+  .cancel-button {
+    font-weight: 900;
+    margin-bottom: 0;
   }
 
 }
