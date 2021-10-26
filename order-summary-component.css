@@ -25,17 +25,21 @@
 
 body {
   line-height: 1.5em;
-  font-family: 'Red Hat Display', sans-serif;
-  /*desaturated blue*/
-  color: hsl(224, 23%, 55%); 
+  font-family: "Red Hat Display", sans-serif;
+  background-image: url("order-summary-component-images/pattern-background-mobile.svg");
+  background: hsl(225, 100%, 94%) no-repeat top/100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  color: hsl(224, 23%, 55%);
   background-repeat: no-repeat;
-  /*pale blue*/
-  background-color: hsl(225, 100%, 94%); 
+  padding: 30px 20px;
 }
 
 h1 {
   /*dark blue*/
-  color: hsl(223, 47%, 23%); 
+  color: hsl(223, 47%, 23%);
   font-size: 1.5em;
   font-weight: 900;
   margin-bottom: 20px;
@@ -59,36 +63,29 @@ img {
 
 /* ---------------------------  OVERALL WEBPAGE */
 
-.wrapper {
-  height: 700px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  background-image: url('order-summary-component-images/pattern-background-mobile.svg');
-  background-repeat: no-repeat;
-}
-
 .attribution {
-  font-size: 11px; text-align: center;
+  font-size: 11px;
+  text-align: center;
 }
 
 /* ---------------------------  COMPONENT */
 
 /* the containing box for the entire component */
-.order-box { 
-  width: 330px;
-  height: auto;
+.order-box {
+  width: 100%;
+  max-width: 450px;
+  /* height: auto; */
   background-color: #fff;
   text-align: center;
   border-radius: 20px;
-  background-image: url('order-summary-component-images/illustration-hero.svg');
+  background-image: url("order-summary-component-images/illustration-hero.svg");
   background-repeat: no-repeat;
   background-size: contain;
+  box-shadow: 0 0.625rem 1.875rem rgba(56, 41, 224, 0.15);
 }
 
 /* containing box for the content of the component */
-.order-summary { 
+.order-summary {
   padding: 200px 20px 10px 20px;
 }
 
@@ -118,13 +115,13 @@ img {
   color: hsl(223, 47%, 23%);
 }
 
-.annual-plan-box, 
+.annual-plan-box,
 .payment-button {
   border-radius: 10px;
 }
 
-.order-summary-text, 
-.annual-plan-box, 
+.order-summary-text,
+.annual-plan-box,
 .payment-button {
   margin-bottom: 30px;
 }
@@ -145,38 +142,41 @@ img {
   text-decoration: none;
   color: #fff;
   padding: 15px;
+  transition: 0.3s;
   /*bright blue*/
-  background-color: hsl(245, 75%, 52%); 
+  background-color: hsl(245, 75%, 52%);
+
   filter: drop-shadow(0 15px 0.85em #c3bcf8);
 }
 
 .cancel-button {
   font-size: 1.05em;
+
   /*desat blue*/
-  color: hsl(224, 23%, 55%); 
+  color: hsl(224, 23%, 55%);
   /* on mobile version order-summary overlaps with order-box instead of fitting into the box, but superficially looks correct */
-  margin-bottom: 20px; 
+  margin-bottom: 20px;
 }
 
-.payment-button, 
-.cancel-button p, {
+.payment-button,
+.cancel-button p {
   font-weight: 700;
   letter-spacing: 0.005em;
 }
 
-.annual-plan-text p, 
+.annual-plan-text p,
 .payment-button {
-   font-size: 1em;
+  font-size: 1em;
 }
 
 /* --------| LINKS */
 
 .change-button a {
   /*bright blue*/
-  color: hsl(245, 75%, 52%); 
+  color: hsl(245, 75%, 52%);
 }
 
-.payment-button a, 
+.payment-button a,
 .cancel-button a {
   text-decoration: none;
 }
@@ -193,39 +193,27 @@ img {
 
 /* --------| LINK HOVER */
 
-@media (hover: hover) { 
-  a:hover {
-    opacity: 50%;
-    filter: drop-shadow(0 20px 1em #e1defb); /* ignored */
-  }
-
-  .cancel-button a:hover {
-    opacity: 100%;
-    /*dark blue*/
-    color: hsl(223, 47%, 23%); 
-    font-weight: 900;
-  }
-
-  .change-button a:hover{
-    text-decoration: none;
-  }
-
+a:hover {
+  opacity: 50%;
 }
 
-/* --------| MOBILE STYLES
-not sure whether this needs to be defined when everything in css doc is already formatted for mobile 
-
-@media screen and (max-width: 375px) {
-  
+.cancel-button a:hover {
+  opacity: 100%;
+  /*dark blue*/
+  color: hsl(223, 47%, 23%);
+  font-weight: 900;
 }
-*/
+
+.change-button a:hover {
+  text-decoration: none;
+}
 
 /* --------| DESKTOP STYLES */
 
-@media screen and (min-width: 500px) and (max-width: 1440px){
-
+@media screen and (min-width: 500px) {
   body {
-      background-image: url('order-summary-component-images/pattern-background-desktop.svg');
+    background-image: url("order-summary-component-images/pattern-background-desktop.svg");
+    padding: 20px 0;
   }
 
   h1 {
@@ -252,27 +240,25 @@ not sure whether this needs to be defined when everything in css doc is already 
   .annual-plan-box {
     padding: 20px;
   }
-  
+
   .order-summary-text {
     margin-bottom: 20px;
   }
-  
+
   .payment-button strong {
     font-weight: 700;
   }
-  
+
   .cancel-button {
     margin-bottom: 0;
   }
-  
+
   .cancel-button strong {
     font-weight: 900;
   }
-  
-  .payment-button, 
+
+  .payment-button,
   .cancel-button {
     font-size: 0.9em;
-    
   }
-
 }
