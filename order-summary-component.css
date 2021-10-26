@@ -149,3 +149,90 @@ strong {
 .cancel-button a {
   color: hsl(224, 23%, 55%);
 }
+
+/* --------------------------------DEBUG-------------------------------- */
+
+.order-summary-text, .music-icon, .annual-plan-text, .change-button {
+  border: 1px solid blue;
+}
+
+.wrapper {
+  border: 4px solid red;
+}
+
+.container {
+  border: 1px solid #000;
+}
+
+.attribution {
+  border: 1px solid red;
+}
+
+
+/* ---------------------------- MEDIA QUERIES 
+
+@media (hover: hover) { /* dont really get why this is written like this */
+  a:hover {
+    opacity: 50%;
+  }
+
+  .cancel-button a:hover {
+    opacity: 100%;
+    color: hsl(223, 47%, 23%); /*dark blue*/
+    font-weight: 900;
+  }
+
+  .change-button a:hover{
+    text-decoration: none;
+  }
+
+}
+
+/* || Mobile Styles */
+@media screen and (max-width: 375px) {
+
+}
+
+/* || Desktop Styles */
+@media screen and (min-width: 375px) and (max-width: 1440px){
+
+  body {
+      background-image: url('order-summary-component-images/pattern-background-desktop.svg');
+  }
+
+  h1 {
+    font-size: 1.8em;
+  }
+
+  strong {
+    font-weight: 700;
+  }
+
+  .wrapper {
+    height: 870px;
+  }
+
+  .order-box {
+    width: 400px;
+    padding: 20px;
+  }
+
+  .order-summary {
+    padding: 0;
+  }
+
+  .order-summary-text {
+    padding: 0;
+  }
+
+  .annual-plan-box {
+    padding: 0;
+  }
+
+  .payment-button, .cancel-button {
+    font-size: 0.9em;
+    font-weight: 700;
+  }
+
+}
+*/
