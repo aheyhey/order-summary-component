@@ -146,7 +146,7 @@ img {
   padding: 15px;
   /*bright blue*/
   background-color: hsl(245, 75%, 52%); 
-  filter: drop-shadow(0 20px 1em #e1ddf8);
+  filter: drop-shadow(0 15px 0.85em #c3bcf8);
 }
 
 .cancel-button {
@@ -154,7 +154,7 @@ img {
   /*desat blue*/
   color: hsl(224, 23%, 55%); 
   /* on mobile version order-summary overlaps with order-box instead of fitting into the box, but superficially looks correct */
-  padding-top: 10px;
+  padding-top: 5px;
   margin-bottom: 20px; 
 }
 
@@ -170,7 +170,7 @@ img {
 }
 
 .payment-button, .change-button p {
-  letter-spacing: 0.05em;
+  letter-spacing: 0.01em;
 }
 
 /* --------| LINKS */
@@ -270,7 +270,6 @@ not sure whether this needs to be defined when everything in css doc is already 
   }
   
   .cancel-button {
-    padding-top: 10px;
     margin-bottom: 0;
   }
   
