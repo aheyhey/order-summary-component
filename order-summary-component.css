@@ -1,8 +1,5 @@
 /* -------------------------------- DEBUGGING MODE
 
-.wrapper, 
-.empty, 
-.attribution, 
 .order-box, 
 .order-summary, 
 .order-summary-text, 
@@ -24,16 +21,16 @@
 }
 
 body {
-  line-height: 1.5em;
-  font-family: "Red Hat Display", sans-serif;
-  background-image: url("order-summary-component-images/pattern-background-mobile.svg");
-  background: hsl(225, 100%, 94%) no-repeat top/100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  line-height: 1.5em;
+  font-family: "Red Hat Display", sans-serif;
+  background-image: url("order-summary-component-images/pattern-background-mobile.svg");
+  background: hsl(225, 100%, 94%) top/100%;
+  background-repeat: no-repeat;
   min-height: 100vh;
   color: hsl(224, 23%, 55%);
-  background-repeat: no-repeat;
   padding: 30px 20px;
 }
 
@@ -61,19 +58,11 @@ img {
   margin: 0px;
 }
 
-/* ---------------------------  OVERALL WEBPAGE */
-
-.attribution {
-  font-size: 11px;
-  text-align: center;
-}
-
 /* ---------------------------  COMPONENT */
 
-/* the containing box for the entire component */
-.order-box {
+.order-box { /* the containing box for the entire component */
   width: 100%;
-  max-width: 450px;
+  max-width: 470px;
   /* height: auto; */
   background-color: #fff;
   text-align: center;
@@ -81,12 +70,11 @@ img {
   background-image: url("order-summary-component-images/illustration-hero.svg");
   background-repeat: no-repeat;
   background-size: contain;
-  box-shadow: 0 0.625rem 1.875rem rgba(56, 41, 224, 0.15);
+  box-shadow: 0 1.5rem 1.25rem 0 rgba(56, 41, 224, 0.15);
 }
 
-/* containing box for the content of the component */
-.order-summary {
-  padding: 200px 20px 10px 20px;
+.order-summary { /* containing box for the content of the component */
+  padding: 200px 20px 10px 20px; 
 }
 
 .order-summary-text {
@@ -145,17 +133,12 @@ img {
   transition: 0.3s;
   /*bright blue*/
   background-color: hsl(245, 75%, 52%);
-
-  filter: drop-shadow(0 15px 0.85em #c3bcf8);
 }
 
 .cancel-button {
   font-size: 1.05em;
-
-  /*desat blue*/
-  color: hsl(224, 23%, 55%);
-  /* on mobile version order-summary overlaps with order-box instead of fitting into the box, but superficially looks correct */
-  margin-bottom: 20px;
+  color: hsl(224, 23%, 55%); /*desat blue*/
+  margin-bottom: 20px; /* on mobile version order-summary overlaps with order-box instead of fitting into the box, but superficially looks correct */
 }
 
 .payment-button,
@@ -172,8 +155,7 @@ img {
 /* --------| LINKS */
 
 .change-button a {
-  /*bright blue*/
-  color: hsl(245, 75%, 52%);
+  color: hsl(245, 75%, 52%); /*bright blue*/
 }
 
 .payment-button a,
@@ -189,18 +171,13 @@ img {
   color: hsl(228, 45%, 44%);
 }
 
-/* ---------------------------- MEDIA QUERIES */
-
-/* --------| LINK HOVER */
-
 a:hover {
   opacity: 50%;
 }
 
 .cancel-button a:hover {
   opacity: 100%;
-  /*dark blue*/
-  color: hsl(223, 47%, 23%);
+  color: hsl(223, 47%, 23%); /*dark blue*/
   font-weight: 900;
 }
 
@@ -208,16 +185,19 @@ a:hover {
   text-decoration: none;
 }
 
+/* ---------------------------- MEDIA QUERIES */
+
 /* --------| DESKTOP STYLES */
 
 @media screen and (min-width: 500px) {
+  
   body {
     background-image: url("order-summary-component-images/pattern-background-desktop.svg");
     padding: 20px 0;
   }
 
   h1 {
-    font-size: 1.5em;
+    font-size: 1.6em;
   }
 
   .wrapper {
