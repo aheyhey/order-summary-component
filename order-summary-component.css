@@ -71,10 +71,11 @@ img {
   background-repeat: no-repeat;
   background-size: contain;
   box-shadow: 
-      0 1px 8px -4px rgb(114, 128, 167, 0.5),
-      0 1px 15px -4px rgb(114, 128, 167, 0.5),
-      0 32px 30px -16px rgb(114, 128, 167, 0.5),
-      0 64px 60px -16px rgb(114, 128, 167, 0.5);
+      0 1px 8px -4px rgb(224, 232, 255, 0.8),
+      0 1px 15px -4px rgb(224, 232, 255, 0.8),
+      0 32px 30px -16px rgb(224, 232, 255, 0.8),
+      0 64px 60px -16px rgb(224, 232, 255, 0.8);
+      /* hsl(224, 23%, 55%) rgba equivalent: rgb(114, 128, 167, 0.5) */
 }
 
 .order-summary { /* containing box for the content of the component */
