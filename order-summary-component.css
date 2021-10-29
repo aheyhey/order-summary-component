@@ -71,10 +71,10 @@ img {
   background-repeat: no-repeat;
   background-size: contain;
   box-shadow: 
-      0 1px 8px -4px rgb(56, 41, 224, 0.2),
-      0 1px 15px -4px rgb(56, 41, 224, 0.2),
-      0 32px 25px -16px rgb(56, 41, 224, 0.2),
-      0 64px 50px -16px rgb(56, 41, 224, 0.2);
+      0 1px 8px -4px rgb(56, 41, 224, 0.05),
+      0 1px 15px -4px rgb(56, 41, 224, 0.05),
+      0 32px 25px -16px rgb(56, 41, 224, 0.05),
+      0 64px 50px -16px rgb(56, 41, 224, 0.05);
       /* hsl(224, 23%, 55%) rgba equivalent: rgb(114, 128, 167, 0.2) 
          using light blue rgb(224, 232, 255, 0.8) - doesn't render at all and even cancels out the drop shadow on payment-button 
          hsl(245, 75%, 52%) bright blue -> rgb(56, 41, 224) */
@@ -140,6 +140,7 @@ img {
   transition: 0.3s;
   /*bright blue*/
   background-color: hsl(245, 75%, 52%);
+  filter: drop-shadow(0 15px 0.85em #c3bcf8);
 }
 
 .cancel-button {
