@@ -71,9 +71,6 @@ img {
   background-repeat: no-repeat;
   background-size: contain;
   box-shadow: 
-      0 1px 8px -4px rgba(224, 232, 255, 0.8),
-      0 1px 15px -4px rgba(224, 232, 255, 0.8),
-      0 32px 30px -16px rgba(224, 232, 255, 0.8),
       0 64px 60px -16px rgba(224, 232, 255, 0.8);
 }
 
