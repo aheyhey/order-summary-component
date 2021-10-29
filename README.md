@@ -39,9 +39,13 @@ Users should be able to:
 
 - I coded and tested everything using Atom Editor and a browser - when I manually input new code and updated the css on Github, the code broke unexpectedly, something to do with the browser settings itself?
 - Seems to be a delay (several minutes) on Github pages updating whenever I made any commits, don't like that the changes are not instantaneous, ruins workflow
-- Can't seem to retain filter: drop-shadow(0 20px 1em #e1defb); when hovering over "Payment Summary" is ignored
-- Don't know which height to set for mobile and desktop, but it seems to be needed for flexbox center position to work
 - Fine-tuning the fonts, haven't subscribed to pro yet so don't have access to the design files
+
+- ~~Can't seem to retain filter: drop-shadow(0 20px 1em #e1defb); when hovering over "Payment Summary" is ignored~~
+  - [Yazdun](https://github.com/Yazdun) helped 
+- ~~Don't know which height to set for mobile and desktop, but it seems to be needed for flexbox center position to work~~
+  - [Yazdun](https://github.com/Yazdun) adjusted the code to: `background: hsl(225, 100%, 94%) top/100%; min-height: 100vh;`
+  - Still appears to be some scrolling on tablet size
 
 ### Style guide
 
@@ -71,7 +75,6 @@ Inspired by [MDN's guidelines](https://developer.mozilla.org/en-US/docs/MDN/Guid
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
 
 ### What I learned
@@ -82,6 +85,9 @@ It can be a bit frustrating when the code breaks, though, but I think this can b
 - That I'm motivated to learn more and better when I'm building towards a final product.
   - I wanted to hit the ground running by going headlong into my first mini project before I felt completely ready. I preferred to hunt for the answers and learn knowledge that's relevant to the problem at hand rather than doing a sequence and series of breadcrumbed exercises without seeing practical use cases for any of them in a meaningful project. I've tried this method before encountering Frontend mentor and felt disengaged and unsatisfied. I went forward with the knowledge I had so far and when I was struggling did I go back several steps to learn some more before reattempting again.
 
+- As developers tasked with implementing a design, sometimes we have to accept that we might not to achieve pixel-perfect but [pixel-pretty-close](https://www.joshwcomeau.com/css/pixel-perfection/) results.
+  - I definitely feel like I spent a bit too long fine-tuning the font styling, the size, whether a font is bolded or not, letter-spacing etc - the design picture seemed to change whenever I looked at it again. 
+
 - The importance of actually planning and studying the problem before rushing headlong into the coding (I was pretty eager to start building and had to go back in the middle of to re-examine how to divide up the boxes in the best way)
 
 - The importance of mobile first workflow - before this I had coded for desktop first, because that's my preference for browsing the web. However, I've recently encountered a convincing essay on why we should always develop for [mobile first](http://mobile-first.abookapart.com/).
@@ -90,13 +96,14 @@ It can be a bit frustrating when the code breaks, though, but I think this can b
 
 - Using Flexbox and intro to CSS layout
 
+- CSS animations!
+  - [Yazdun](https://github.com/Yazdun)'s addition of `transition: 0.3s` to the payment button really heightened the interactive experience 
+
+
 ### Continued development
 
-- Identifying correct font stylings
-I think I probably spent the most time fine-tuning whether a font is bolded or not, the picture seemed to change whenever I looked at it again
-
 - More understanding and implementation of version control
-I coded this component mostly just the atom editor and browser. When it was close to the time where I had to publicly share the code, I manually updated in Github.
+  - I coded this component mostly just the atom editor and a browser of choice. When it was close to the time where I had to publicly share the code, I manually updated in Github.
 
   - I think I didn't feel the need to use version control because the project is so small. I understand the necessity of save points but looking at the terminal is still kind of intimidating and overwhelming. I still don't get what Homebrew is exactly - I think I've installed it??
 
@@ -113,6 +120,8 @@ I coded this component mostly just the atom editor and browser. When it was clos
 - Start learning how to use pre-processors & post-processors, but I figure this may be a bit more down the line when I'm a bit more comfortable with code
 
 - [Colour management](https://abookapart.com/products/making-sense-of-color-management)
+
+- Accessibility
 
 ### Useful resources
 
